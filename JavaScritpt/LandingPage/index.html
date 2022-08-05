@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+
+      .main {
+        margin: 0px;
+        padding: 0px;
+        width: 460px;
+        height: auto;
+      }
+      .Top {
+        background-image: linear-gradient(
+          to right,
+          #8117e9,
+          #913beb,
+          #9f54ed,
+          #ad6bef,
+          #b981f0
+        );
+      }
+      .div1 {
+        padding-left: 45px;
+        padding-top: 30px;
+      }
+      .div2 {
+        padding-top: 35px;
+        color: white;
+        font-size: 38px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+      }
+
+      .div3 {
+        padding-top: 20px;
+        padding-left: 18%;
+        font-size: 40px;
+      }
+      #button {
+        opacity: 0.8;
+
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 100px;
+        padding-right: 100px;
+        border-radius: 10px;
+        background-color: rgb(255, 72, 0);
+        color: white;
+        letter-spacing: 2px;
+      }
+      .discription {
+        padding-bottom: 40px;
+      }
+      .div4 {
+        margin-top: 30px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        color: wheat;
+        padding-left: 22%;
+        font-size: 25px;
+        justify-content: space-around;
+      }
+      #sticker {
+        height: 35px;
+        color: white;
+      }
+      .list-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .list1 {
+        font-size: 25px;
+        padding-top: 5px;
+        color: wheat;
+        font-weight: 600;
+      }
+      .job-card {
+        /* opacity: .7; */
+        box-shadow: 5px 5px 5px rgb(233, 217, 217),
+          -5px -5px 15px rgb(240, 216, 216);
+        margin-top: 25px;
+        width: 96%;
+        margin-inline: auto;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        background-color: whitesmoke;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .card1 {
+        padding-left: 5px;
+      }
+      .card2 {
+        display: flex;
+        flex-direction: row;
+      }
+      .card3 {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 50px;
+        font-size: 20px;
+      }
+      #grade {
+        padding-top: 5px;
+
+        font-size: 20px;
+      }
+      #location_symbol {
+        height: 22px;
+        padding-top: 5px;
+        padding-right: 5px;
+      }
+      .Subject {
+        padding-top: 5px;
+        font-size: 32px;
+      }
+      .company_name {
+        padding-top: 5px;
+        letter-spacing: 0.1;
+        font-size: 24px;
+      }
+      .card4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .card-button {
+        padding-top: 10px;
+        justify-content: space-between;
+      }
+      #apply {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 10px;
+        background-color: white;
+        color: rgb(255, 72, 0);
+        letter-spacing: 2px;
+      }
+      #prepare {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 48px;
+        padding-right: 48px;
+        border-radius: 10px;
+        background-color: rgb(87, 87, 226);
+        color: white;
+        letter-spacing: 2px;
+      }
+      #heart {
+        height: 30px;
+        width: auto;
+      }
+      .subtitle {
+        color: wheat;
+      }
+      li {
+        padding-top: 20px;
+      }
+      .div5 {
+        /* opacity: .8; */
+        border-radius: 10px;
+        padding-right: 5px;
+        background-color: #d2acf7;
+      }
+      .image {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+      }
+      #box {
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+        border-radius: 50%;
+        background-color: rgb(67, 194, 199);
+      }
+      .Mansha {
+        width: 35%;
+      }
+      #Teacher {
+        letter-spacing: 0.5px;
+
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 30px;
+        color: rgb(10, 7, 7);
+
+        text-align: center;
+      }
+      #text {
+        color: white;
+      }
+      #card-heading {
+        font-style: inherit;
+        font-size: 32px;
+        color: blue;
+      }
+      #name {
+        padding-top: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      #subject {
+        padding-top: 3px;
+
+        font-size: 24px;
+        color: black;
+        font-weight: 700;
+      }
+      #jobwithmedal {
+        /* padding-top: 5px; */
+
+        font-size: 26px;
+        color: #393d32;
+      }
+      .div6 {
+        /* opacity: .8; */
+
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: #b5f0e6;
+      }
+      .div7 {
+        /* opacity: .8; */
+
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: #f9c5b4;
+      }
+      .div8 {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+      }
+      #Dream-job {
+        padding-top: 20px;
+        color: #6464b1;
+        text-align: center;
+        font-weight: 700;
+
+        font-size: 50px;
+      }
+      #sub-heading {
+        padding-bottom: 20px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 40px;
+      }
+      #button2 {
+        opacity: 0.8;
+
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 60px;
+        padding-right: 60px;
+        border-radius: 10px;
+        background-color: rgb(255, 72, 0);
+        color: white;
+        letter-spacing: 2px;
+      }
+      .div9 {
+        padding-bottom: 20px;
+        padding-left: 25%;
+      }
+
+      @media (max-width: 600px) {
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          box-sizing: border-box;
+        }
+        .main {
+          margin: 0px;
+          padding: 0px;
+          width: 460px;
+          height: auto;
+        }
+        .Top {
+          background-image: linear-gradient(
+            to right,
+            #8117e9,
+            #913beb,
+            #9f54ed,
+            #ad6bef,
+            #b981f0
+          );
+        }
+        .div1 {
+          padding-left: 45px;
+          padding-top: 30px;
+
+      
+        }
+        .div2 {
+    
+          padding-top: 35px;
+          color: white;
+          font-size: 38px;
+          padding-left: 5px;
+          padding-right: 5px;
+          text-align: center;
+        }
+
+        .div3 {
+        
+          padding-top: 20px;
+          padding-left: 18%;
+          font-size: 40px;
+        }
+        #button {
+          opacity: 0.8;
+
+          font-size: 20px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 100px;
+          padding-right: 100px;
+          border-radius: 10px;
+          background-color: rgb(255, 72, 0);
+          color: white;
+          letter-spacing: 2px;
+        }
+        .discription {
+          padding-bottom: 40px;
+        }
+        .div4 {
+          margin-top: 30px;
+         
+          width: 80%;
+          display: flex;
+          flex-direction: row;
+          color: wheat;
+          padding-left: 22%;
+          font-size: 25px;
+          justify-content: space-around;
+          /* padding-top: 10px; */
+        }
+        #sticker {
+          height: 35px;
+          color: white;
+        }
+        .list-item {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+        .list1 {
+          font-size: 25px;
+          padding-top: 5px;
+          color: wheat;
+          font-weight: 600;
+        }
+        .job-card {
+          /* opacity: .7; */
+          box-shadow: 5px 5px 5px rgb(233, 217, 217),
+            -5px -5px 15px rgb(240, 216, 216);
+          margin-top: 25px;
+          width: 96%;
+          margin-inline: auto;
+          border-radius: 10px;
+          padding-bottom: 10px;
+          background-color: whitesmoke;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .card1 {
+          padding-left: 5px;
+        }
+        .card2 {
+          display: flex;
+          flex-direction: row;
+        }
+        .card3 {
+          padding-top: 5px;
+          padding-bottom: 10px;
+          display: flex;
+          flex-direction: row;
+          padding-left: 50px;
+          font-size: 20px;
+        }
+        #grade {
+          padding-top: 5px;
+
+          font-size: 20px;
+        }
+        #location_symbol {
+          height: 22px;
+          padding-top: 5px;
+          padding-right: 5px;
+        }
+        .Subject {
+          padding-top: 5px;
+          font-size: 32px;
+        }
+        .company_name {
+          padding-top: 5px;
+          letter-spacing: 0.1;
+          font-size: 24px;
+        }
+        .card4 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .card-button {
+          padding-top: 10px;
+          justify-content: space-between;
+        }
+        #apply {
+          font-size: 15px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 50px;
+          padding-right: 50px;
+          border-radius: 10px;
+          background-color: white;
+          color: rgb(255, 72, 0);
+          letter-spacing: 2px;
+        }
+        #prepare {
+          font-size: 15px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 48px;
+          padding-right: 48px;
+          border-radius: 10px;
+          background-color: rgb(87, 87, 226);
+          color: white;
+          letter-spacing: 2px;
+        }
+        #heart {
+          height: 30px;
+          width: auto;
+        }
+        .subtitle {
+          color: wheat;
+        }
+        li {
+          padding-top: 20px;
+        }
+        .div5 {
+          /* opacity: .8; */
+          border-radius: 10px;
+          padding-right: 5px;
+          background-color: #d2acf7;
+        }
+        .image {
+          padding-top: 30px;
+          padding-bottom: 40px;
+          display: flex;
+          flex-direction: row;
+          padding-left: 10px;
+        }
+        #box {
+          border: 1px solid black;
+          width: 100px;
+          height: 100px;
+          margin-top: 30px;
+          border-radius: 50%;
+          background-color: rgb(67, 194, 199);
+        }
+        .Mansha {
+          width: 35%;
+        }
+        #Teacher {
+          letter-spacing: 0.5px;
+
+          padding-top: 50px;
+          padding-bottom: 20px;
+          font-size: 30px;
+          color: rgb(10, 7, 7);
+
+          text-align: center;
+        }
+        #text {
+          color: white;
+        }
+        #card-heading {
+          font-style: inherit;
+          font-size: 32px;
+          color: blue;
+        }
+        #name {
+          padding-top: 10px;
+          color: black;
+          font-weight: bold;
+          font-size: 30px;
+        }
+        #subject {
+          padding-top: 3px;
+
+          font-size: 24px;
+          color: black;
+          font-weight: 700;
+        }
+        #jobwithmedal {
+          /* padding-top: 5px; */
+
+          font-size: 26px;
+          color: #393d32;
+        }
+        .div6 {
+          /* opacity: .8; */
+
+          border-radius: 10px;
+          margin-top: 20px;
+          background-color: #b5f0e6;
+        }
+        .div7 {
+          /* opacity: .8; */
+
+          border-radius: 10px;
+          margin-top: 20px;
+          background-color: #f9c5b4;
+        }
+        .div8 {
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 30px;
+        }
+        #Dream-job {
+          padding-top: 20px;
+          color: #6464b1;
+          text-align: center;
+          font-weight: 700;
+
+          font-size: 50px;
+        }
+        #sub-heading {
+          padding-bottom: 20px;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          text-align: center;
+          padding-top: 10px;
+          font-size: 40px;
+        }
+        #button2 {
+          opacity: 0.8;
+
+          font-size: 20px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 60px;
+          padding-right: 60px;
+          border-radius: 10px;
+          background-color: rgb(255, 72, 0);
+          color: white;
+          letter-spacing: 2px;
+        }
+        .div9 {
+          padding-bottom: 20px;
+          padding-left: 25%;
+        }
+
+        button a #prepare{
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .bottom-left {
+        position: absolute;
+        margin-top: 12px;
+        padding-left: 65px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      #logo {
+        position: absolute;
+        border: 2px solid white;
+        height: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+    </style>
+    <div class="webview">
+      <div class="main">
+        <div class="Top">
+          <div class="div1">
+            <div class="bottom-left">Medal</div>
+            <img
+              src="https://static.wixstatic.com/media/971d6e_1169310241414a16b2e7a522d6b2ec11~mv2.jpg/v1/fill/w_75,h_75,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/971d6e_1169310241414a16b2e7a522d6b2ec11~mv2.jpg"
+              id="logo"
+            />
+            <img
+              src="https://static.wixstatic.com/media/971d6e_ac22d20496e942ffa6370b856a778fce~mv2.png/v1/fill/w_575,h_431,al_c,lg_1,enc_auto/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-removebg-preview_edited.png"
+              alt="Flowers in Chania"
+              width="400"
+              height="300"
+            />
+          </div>
+          <div class="div2">All Online Teaching Jobs At One Place</div>
+          <div class="div3">
+            <button id="button">
+              <a href="https://www.medalapp.com/" target="_blank">Find Jobs</a>
+            </button>
+          </div>
+
+          <div class="discription">
+            <div class="div4">
+              <div class="list_item">
+                <img src="./assests/Stickers.png" id="sticker" />
+              </div>
+              <div class="list1">Work From Home</div>
+             
+            </div>
+
+            <div class="div4">
+              <div class="list_item">
+                <img src="./assests/Stickers.png" id="sticker" />
+              </div>
+              <div class="list1">Varified Company</div>
+             
+            </div>
+            <div class="div4">
+              <div class="list_item">
+                <img src="./assests/Stickers.png" id="sticker" />
+              </div>
+              <div class="list1">On-time Payment</div>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div>
+            <div>
+              <img
+                src="https://pbs.twimg.com/profile_images/1473957068402876417/jjKxUAoR_400x400.jpg"
+                height="50px"
+                width="50px"
+              />
+            </div>
+          </div>
+          <div class="card1">
+            <div class="Subject">Music Teacher</div>
+            <div class="company_name">Whitehatjr</div>
+            <div class="card2">
+              <div id="grade">Grade: 1-10</div>
+              <div class="card3">
+                <img src="./assests/map.png" id="location_symbol" />
+                Work From Home
+              </div>
+            </div>
+            <hr />
+            <div class="card4">
+              <div class="card-button">
+                <button id="apply">
+                  <a href="https://www.medalapp.com/" target="_blank">Apply</a>
+                </button>
+              </div>
+              <div class="card-button">
+                <button id="prepare">
+                  <a href="https://www.medalapp.com/" target="_blank"
+                    >Prepare</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="./assests/Heart.png" id="heart" />
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div>
+            <img
+              src="https://pbs.twimg.com/profile_images/1327223372271542272/rtDzVblP_400x400.jpg"
+              height="45px"
+              width="45px"
+            />
+          </div>
+          <div class="card1">
+            <div class="Subject">Visual Arts Teacher</div>
+            <div class="company_name">SparkStudio</div>
+            <div class="card2">
+              <div id="grade">Grade: 1-10</div>
+              <div class="card3">
+                <img src="./assests/map.png" id="location_symbol" />
+                Work From Home
+              </div>
+            </div>
+            <hr />
+            <div class="card4">
+              <div class="card-button">
+                <button id="apply">Apply</button>
+              </div>
+              <div class="card-button">
+                <button id="prepare">
+                  <a href="https://www.medalapp.com/" target="_blank"
+                    >Prepare</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="./assests/Heart.png" id="heart" />
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div>
+            <img
+              src="https://pbs.twimg.com/profile_images/1460607358250274820/pm8ZzImH_400x400.jpg"
+              height="50px"
+              width="50px"
+            />
+          </div>
+          <div class="card1">
+            <div class="Subject">English Teacher</div>
+            <div class="company_name">PlanetSpark</div>
+            <div class="card2">
+              <div id="grade">Grade: 1-10</div>
+              <div class="card3">
+                <img src="./assests/map.png" id="location_symbol" />
+                Work From Home
+              </div>
+            </div>
+            <hr />
+            <div class="card4">
+              <div class="card-button">
+                <button id="apply">Apply</button>
+              </div>
+              <div class="card-button">
+                <button id="prepare">
+                  <a href="https://www.medalapp.com/" target="_blank" 
+                    >Prepare</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="./assests/Heart.png" id="heart" />
+          </div>
+        </div>
+
+        <div id="Teacher">Join <b>1000+</b> Successful Teachers</div>
+        <div class="div5">
+          <div class="image">
+            <div class="Mansha">
+              <img
+                src="https://medalapp.com/images/testimonial/Mansha.webp"
+                id="box"
+              />
+              <!-- <div id="box"></div> -->
+            </div>
+            <div id="text">
+              <div id="card-heading">"Trusted Jobs"</div>
+              <div id="name">Mansha</div>
+              <div id="subject">Online English Teacher</div>
+              <div id="jobwithmedal">Got her job with Medal</div>
+            </div>
+          </div>
+        </div>
+        <div class="div6">
+          <div class="image">
+            <div class="Mansha">
+              <img
+                src="https://medalapp.com/images/testimonial/Ruchira.webp"
+                id="box"
+              />
+
+              <!-- <div id="box"></div> -->
+            </div>
+            <div id="text">
+              <div id="card-heading">"Just Wow"</div>
+              <div id="name">Shemran</div>
+              <div id="subject">Online Math Teacher</div>
+              <div id="jobwithmedal">Got her job with Medal</div>
+            </div>
+          </div>
+        </div>
+        <div class="div7">
+          <div class="image">
+            <div class="Mansha">
+              <img
+                src="https://medalapp.com/images/testimonial/Shemran.webp"
+                id="box"
+              />
+
+              <!-- <div id="box"></div> -->
+            </div>
+            <div id="text">
+              <div id="card-heading">"Amazing Service"</div>
+              <div id="name">Ruchira</div>
+              <div id="subject">Online Science Teacher</div>
+              <div id="jobwithmedal">Got her job with Medal</div>
+            </div>
+          </div>
+        </div>
+        <div class="div8">
+          <div id="Dream-job">Get Your Dream job</div>
+          <div id="sub-heading">Start Teaching.Start earning.</div>
+          <div class="div9">
+            <button id="button2">
+              <a href="https://www.medalapp.com/" target="_blank">Find Jobs</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
