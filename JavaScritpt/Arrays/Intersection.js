@@ -1,4 +1,4 @@
-function Intersection(arr1, m, arr2, n) {
+function Intersection(arr1, m, arr2, n){
   let set1 = new Set();
   let set2 = new Set();
   for (let i = 0; i < m; i++) {

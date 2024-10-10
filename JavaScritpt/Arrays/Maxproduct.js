@@ -9,3 +9,11 @@ for(let i=n-1;i>=n-3;i--){
 product =product*number[i];
 }
 console.log("The final product of three largest number is", product)
+
+function max_Product(arr,n){
+    let result
+    for(let i=0;i<n;i++){
+        let subarray=arr.slice(i,i+3)
+        
+    }
+}

@@ -13,7 +13,14 @@ function BinarySearch(arr,Target,l,r){
 }
 
 }
-let arr = [ 2, 3, 4, 10, 40 ];
-let x = 10;
+let arr = [ 2, 3, 4, 10, 40,2 ];
 let n = arr.length
-console.log(BinarySearch(arr,10,0,n-1))
+
+//linear search
+for(let i=0;i<n;i++){
+    if(arr[i]==4){
+        console.log('Find')
+        return
+    }
+}
+console.log(arr)
