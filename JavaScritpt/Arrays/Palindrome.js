@@ -29,7 +29,6 @@
 // }
 // console.log(isPalindrome(12321))
 
-
 //reverse a string
 // function swap(a,b){
 //     let tem=a
@@ -53,3 +52,26 @@
 // // reverseString('abcdefghijk')
 // console.log(reverseString('abcdefghijk'))
 
+var isPalindrome = function (x) {
+  if (x < 0) return false;
+  if(x==0) return true;
+  var flag = false;
+  let num = x;
+  let sum = 0;
+  while (num != 0) {
+    let digit = num % 10;
+    sum = sum * 10 + digit;
+    num = parseInt(num / 10);
+    if (sum == x) {
+      flag = true;
+    }
+  }
+  console.log('sum',sum)
+  if (flag) {
+    return true;
+  } else {
+    return false;
+  }
+};
+let result = isPalindrome(121);
+console.log(result);
