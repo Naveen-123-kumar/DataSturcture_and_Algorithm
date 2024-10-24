@@ -1,5 +1,4 @@
 function checkPrime(num) {
-  let count = 0;
   if (num < 2) {
     return;
   } 
